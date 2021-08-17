@@ -1,0 +1,4 @@
+Bonjour, je suis Maillot Franck et je suis une Cloche.
+Bref revenon a nos mouton; J'ai un bac stmg spécialité mercatique , puis plus rien par manque de chance, j'ai errer pendant 5 ans sans pouvoir faire quelque chose.
+Puis ce cycle s'est brisée par la chance d'être accepter a une formation proposer par ma conseillère Mission local qui touveh un domaine que je trouvais très intéressant L'Informatique. Par le biais de la formation d'Assistant numérique j'ai pu toucher a du codage et j'ai trouvais sa fascinant. A partir de cela j'ai voulue avancer dans ce domaine c'est pour sa que j'ai pu attérir dans la formation "Apprendre à coder" et actuellement "Aprendre à coder". Même si je me sens inférieux et complémenent perdu de temps en temps comparér aux autre j'apprécie ce domaine.
+C'est pour cela que le but de cette formation pour moi et de me permette de coder des site qui a la capacité d'immergée l'utilisateur que ce soit sur le plan design ou expérience utilisateur. 
