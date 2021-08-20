@@ -218,7 +218,7 @@ function HelloWorld(){
 HelloWorld();
 ?>
 
-<?php
+<?php//Activité 17
 echo '<br/>';
 echo '<br/>';
     function jeRetourneMonArgument(){
@@ -230,7 +230,7 @@ echo '<br/>';
     jeRetourneMonArgument();
 
 ?>
-<?php
+<?php //Activité 18
 echo '<br/>';
 echo '<br/>';
 $arg1 = 'Antoine';
@@ -241,7 +241,7 @@ return $arg1 . $arg2;
 echo concatenation($arg1 , $arg2);
 ?>
 
-<?php
+<?php //Activité 19
 echo '<br/>';
 echo '<br/>';
 $arg3 = 5;
@@ -252,7 +252,7 @@ function somme($arg3, $arg4 ){
 echo somme($arg3, $arg4);
 ?>
 
-<?php
+<?php//Activité 20
 echo '<br/>';
 echo '<br/>';
 $arg3 = 5;
@@ -263,7 +263,7 @@ function soustraction($arg3, $arg4 ){
 echo soustraction($arg3, $arg4);
 ?>
 
-<?php
+<?php //Activité 21
 echo '<br/>';
 echo '<br/>';
 $arg3 = 5;
@@ -274,7 +274,7 @@ function multiplications($arg3, $arg4 ){
 echo multiplications($arg3, $arg4);
 ?>
 
-<?php
+<?php //Activité 22
 echo '<br/>';
 echo '<br/>';
 $arg3 = 5;
@@ -285,21 +285,127 @@ function division($arg3, $arg4 ){
 echo division($arg3, $arg4);
 ?>
 
-<?php
+<?php //Activité 23
 echo '<br/>';
-    $age1 = 36;
-    $age2 = 34; 
+    $age1 = TRUE;
+    $age2 = 32;
     function estIlMajeure( $age1, $age2 ){
-        if ( $age1 < 18 && $age1 < $age2){
-            return (TRUE);
+        if ($age2 > 18){
+            return $age1;
             
         }
         else{
             return (FALSE);
         }
     }
-    echo 'cette personne'. estIlMajeure( $age1, $age2);
+    var_dump(estIlMajeure($age1, $age2));
 ?>
+
+<?php //Activité 24
+echo '<br/>';
+echo '<br/>';
+    function premierElementTableau(){
+        $tableau = array( 'France',
+        'Paris',
+        'Allemagne',
+        'Berlin',
+        'ITAlie',
+        'Rome');
+        return var_dump($tableau[0]);
+    }
+    echo premierElementTableau();
+?>
+
+<?php //Activité 24
+echo '<br/>';
+echo '<br/>';
+    function plusGrand(){
+        $chiffre = array(10, 50, 5, 25, 6, 35, 60, 2, 999, 1);
+        
+        while($chiffre > 40) {
+           echo max($chiffre);
+           return;
+        }
+    
+    }
+    echo plusGrand() . ' est plus Grand ' ;
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+$password = true;
+    function verificationPassword($password){
+        $pass = '123456748';
+        if (strlen($pass) >= 8){
+            return $password;
+        }
+        else {
+            return false;}
+    }
+    var_dump (verificationPassword($password));
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+$password = true;
+function verificationsPassword($password){
+    $pass = '123456748';
+    if (preg_match("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,}$",  $pass)){
+        echo 'wellcome';
+    }
+    else {
+        echo 'wrong password';}
+}
+echo verificationsPassword($password);
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+function capital(){
+    $zone = array('France','Paris',
+    'Allemagne' , 'Berlin',
+    'Italie' , 'Rome',
+    'Maroc' , 'Rabat',
+    'Espagne' , 'Madrid',
+    'Portugal' , 'Lisbonne',
+    'Angleterre' , 'Londres',
+    'Tout autre pays' , 'Inconnu',
+    );
+    switch($zone){
+        case 0 :
+            echo $zone[0] . $zone[1];
+            break;
+        case 1 :
+            echo $zone[2] . $zone[3];
+            break;
+        case 2 :
+            echo $zone[4] . $zone[5];
+            break;
+        case 3 :
+            echo $zone[6] . $zone[7];
+            break;
+        case 4 :
+            echo $zone[8] . $zone[9];
+            break;
+        case 5 :
+            echo $zone[10] . $zone[11];
+            break; 
+        case 6 :
+            echo $zone[12] . $zone[13];
+            break;
+        case 7 :
+            echo $zone[14] . $zone[15];
+            break;
+        
+    }
+    var_dump (capital(zone));
+}
+
+?>
+
 
 
 
