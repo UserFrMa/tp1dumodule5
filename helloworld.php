@@ -112,11 +112,12 @@
 //Activité 10
     $cfr = 0;
     while ($cfr <= 20){
-        $cfr++ ;
-        echo ('<br/>'. $cfr);
+        echo "<br/>" . $cfr ;
         if ($cfr == 10){
-            echo ('</strong>' . $cfr);
+            echo ('<strong>' . $cfr . '</strong>');
         }
+        $cfr += 2;
+        
     }
 
     
@@ -140,3 +141,166 @@
         echo $element . '</br>';
     }
 ?>
+
+<?php
+//Activité 12
+echo '<br/>';
+$tableau[10] = rand(0, 100);
+var_dump($tableau);
+if (in_array(42, $tableau)){
+    echo 'Je suis la';
+}
+else {
+    echo 'NOPE';
+}
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+    $tableau1[10] = rand(0, 100);
+    var_dump($tableau1);
+    if($tableau1 < 50){
+        var_dump($tableau1);
+    }
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+
+   $tableau = array();
+   $i = 0;
+   while($i < 10) {
+      $tableau[] = rand(0, 50);
+      $i++;	  
+   }
+   if(in_array(42, $tableau))
+      echo 'Le nombre 42 est bien dans le tableau.';
+   else
+      echo 'Le tableau ne contient pas la valeur 42.';
+   echo '<br />';  
+   var_dump($tableau);
+?>
+
+
+
+<?php
+echo '<br/>';
+echo '<br/>';
+ $pays_population = array(
+ 'France' => 67595000,
+ 'Suede' => 9998000,
+ 'Suisse' => 8417000,
+ 'Kosovo' => 1820631,
+ 'Malte' => 434403,
+ 'Mexique' => 122273500,
+ 'Allemagne' => 82800000,
+ );
+ echo 'Le tableau contien' .count($pays_population). "elements";
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+ $cocktails = array('Mojito', 'Long Island
+Iced Tea', 'Gin Fizz', 'Moscow mule');
+ var_dump($cocktails[1]);
+?>
+
+<?php //Activité 16
+echo '<br/>';
+echo '<br/>';
+function HelloWorld(){
+    echo 'Hello World!';
+
+}
+HelloWorld();
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+    function jeRetourneMonArgument(){
+        echo 'ABC'. '<br/>';
+        echo '123'; 
+        return;
+    
+    }
+    jeRetourneMonArgument();
+
+?>
+<?php
+echo '<br/>';
+echo '<br/>';
+$arg1 = 'Antoine';
+$arg2 = 'Griezmann';
+function concatenation($arg1, $arg2) {
+return $arg1 . $arg2;
+}
+echo concatenation($arg1 , $arg2);
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+$arg3 = 5;
+$arg4 = 5;
+function somme($arg3, $arg4 ){
+    return $arg3 + $arg4;
+}
+echo somme($arg3, $arg4);
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+$arg3 = 5;
+$arg4 = 5;
+function soustraction($arg3, $arg4 ){
+    return $arg3 - $arg4;
+}
+echo soustraction($arg3, $arg4);
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+$arg3 = 5;
+$arg4 = 5;
+function multiplications($arg3, $arg4 ){
+    return $arg3 * $arg4;
+}
+echo multiplications($arg3, $arg4);
+?>
+
+<?php
+echo '<br/>';
+echo '<br/>';
+$arg3 = 5;
+$arg4 = 5;
+function division($arg3, $arg4 ){
+    return $arg3 / $arg4;
+}
+echo division($arg3, $arg4);
+?>
+
+<?php
+echo '<br/>';
+    $age1 = 36;
+    $age2 = 34; 
+    function estIlMajeure( $age1, $age2 ){
+        if ( $age1 < 18 && $age1 < $age2){
+            return (TRUE);
+            
+        }
+        else{
+            return (FALSE);
+        }
+    }
+    echo 'cette personne'. estIlMajeure( $age1, $age2);
+?>
+
+
+
+
