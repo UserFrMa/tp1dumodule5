@@ -316,7 +316,7 @@ echo '<br/>';
     echo premierElementTableau();
 ?>
 
-<?php //Activité 24
+<?php //Activité 25
 echo '<br/>';
 echo '<br/>';
     function plusGrand(){
@@ -331,7 +331,7 @@ echo '<br/>';
     echo plusGrand() . ' est plus Grand ' ;
 ?>
 
-<?php
+<?php //Activité 26
 echo '<br/>';
 echo '<br/>';
 $password = true;
@@ -346,65 +346,131 @@ $password = true;
     var_dump (verificationPassword($password));
 ?>
 
-<?php
+<?php //Activité 27
 echo '<br/>';
 echo '<br/>';
 $password = true;
 function verificationsPassword($password){
-    $pass = '123456748';
-    if (preg_match("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,}$",  $pass)){
+    $pass = 'Ab06@5050000fder21';
+    if (preg_match("#^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,}$#",  $pass)){
         echo 'wellcome';
+        return $password;
     }
     else {
-        echo 'wrong password';}
+        echo 'wrong password';
+    return (FALSE);}
 }
 echo verificationsPassword($password);
 ?>
 
-<?php
+<?php //Activité 28
 echo '<br/>';
 echo '<br/>';
 function capital(){
-    $zone = array('France','Paris',
-    'Allemagne' , 'Berlin',
-    'Italie' , 'Rome',
-    'Maroc' , 'Rabat',
-    'Espagne' , 'Madrid',
-    'Portugal' , 'Lisbonne',
-    'Angleterre' , 'Londres',
-    'Tout autre pays' , 'Inconnu',
+    $zone = array('France'=>'Paris',
+    'Allemagne' => 'Berlin',
+    'Italie' => 'Rome',
+    'Maroc' => 'Rabat',
+    'Espagne' => 'Madrid',
+    'Portugal' => 'Lisbonne',
+    'Angleterre' => 'Londres',
     );
-    switch($zone){
-        case 0 :
-            echo $zone[0] . $zone[1];
+    $zonegeo = 'Italie';
+    switch($zonegeo){
+     
+        case 'France':
+            return $zone['France'];
             break;
-        case 1 :
-            echo $zone[2] . $zone[3];
+           
+        case 'Allemagne':
+            return $zone['Allemagne'];
             break;
-        case 2 :
-            echo $zone[4] . $zone[5];
+            
+        case 'Italie':
+            return $zone['Italie'];
             break;
-        case 3 :
-            echo $zone[6] . $zone[7];
+           
+        case 'Maroc':
+            return $zone['Maroc'];
             break;
-        case 4 :
-            echo $zone[8] . $zone[9];
+
+            
+        case 'Espagne':
+            return $zone['Espagne'];
             break;
-        case 5 :
-            echo $zone[10] . $zone[11];
-            break; 
-        case 6 :
-            echo $zone[12] . $zone[13];
+
+        case 'Portugal' :
+            return $zone['Portugal'];
             break;
-        case 7 :
-            echo $zone[14] . $zone[15];
+
+        case 'Angleterre':
+            return $zone['Angleterre'];
             break;
+
+        default:
+          return ('inconnu');
+          break;
         
     }
-    var_dump (capital(zone));
+    
+}
+var_dump (capital());
+?>
+
+<?php //Activité 29
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+function listHTML(){
+    $listname = 'pays';
+    $tablelist = ['france', 'allemagne', 'espagne', 'italie'];
+    $count = 0;
+    foreach ($tablelist as $element){
+            echo "<li>";
+            echo $element;
+            echo "</li>";
+            $count ++;
+        if ($listname == 'pays'){
+        echo $listname . '</br>';
+        echo $element;
+        return;
+    }
+    else {
+        return ('null');
+    }
+    }
+
+    
+
 }
 
+echo listHTML();
 ?>
+
+<?php //Activité 30
+    function remplacerLesLettres($replace){
+    
+        $replace = strtr($replace, 'e,i,o', '3,1,0');
+        return $replace; 
+    }
+    echo "<br/><br/>" .remplacerLesLettres("Bonjour les amis"). "<br/><br/>";
+?>
+
+<?php
+echo "<br/>";
+echo "<br/>";
+    function queldate(){
+    date_default_timezone_set('Indian/Reunion');
+    setlocale(LC_ALL, 'fr_Fr.UTF8', 'fr_FR');
+    $date = new DateTime();
+    return $date->format('d-m-y');
+
+}
+echo '<strong>'. 'On est le '. queldate() . '</strong>';
+?>
+
+
+
 
 
 
