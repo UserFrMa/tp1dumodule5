@@ -1,0 +1,5 @@
+<chapitre>
+ <title>Les Variables</title>
+ <sujet>En PHP, les variables sont représentées par un signe dollar &amp;quot;$&amp;quot; suivi du nom de la variable. Le nom est sensible à la casse.&amp;#13;&#13;
+Les noms de variables suivent les mêmes règles de nommage que les autres entités PHP. Un nom de variable valide doit commencer par une lettre ou un souligné (_), suivi de lettres, chiffres ou soulignés. Exprimé sous la forme d'une expression régulière, cela donne : ^[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff]*$</sujet>
+</chapitre>

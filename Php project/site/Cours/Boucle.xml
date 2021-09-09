@@ -1,0 +1,11 @@
+<chapitre>
+ <title>Les Boucles</title>
+ <sujet>Les boucles vont nous permettre d’exécuter plusieurs fois un bloc de code, c’est-à-dire d’exécuter un code « en boucle » tant qu’une condition donnée est vérifiée.&#13;
+&#13;
+Lorsqu’on code, on va en effet souvent devoir exécuter plusieurs fois un même code. Utiliser une boucle nous permet de n’écrire le code qu’on doit exécuter plusieurs fois qu’une seule fois.&#13;
+&#13;
+Nous allons ainsi pouvoir utiliser les boucles pour parcourir et afficher plusieurs valeurs un une seule instruction, comme par exemple récupérer la liste des produits achetés dans une commande, afficher le prénom de tous les utilisateurs de notre site, récupérer des valeurs jusqu’à un certain point donné dans une variable tableau, etc. &#13;
+&#13;
+&#13;
+ET BIEN BONJOURS</sujet>
+</chapitre>

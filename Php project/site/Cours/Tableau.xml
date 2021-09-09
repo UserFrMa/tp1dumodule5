@@ -1,0 +1,6 @@
+<chapitre>
+ <title>Les Tableaux</title>
+ <sujet>Un tableau en PHP est en fait une carte ordonnée. Une carte est un type qui associe des valeurs à des clés. Ce type est optimisé pour différentes utilisations ; il peut être considéré comme un tableau, une liste, une table de hachage, un dictionnaire, une collection, une pile, une file d'attente et probablement plus. On peut avoir, comme valeur d'un tableau, d'autres tableaux, multidimensionnels ou non.;&#13;
+&#13;
+La structure de ces données dépasse l'objet de ce manuel, mais vous trouverez au moins un exemple pour chacun des cas évoqués. Pour plus d'informations, reportez-vous aux différentes explications sur le sujet que l'on trouve sur le web.</sujet>
+</chapitre>

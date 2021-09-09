@@ -1,0 +1,17 @@
+<pages>
+<link>
+<page url=”index.php?site=boucles>Les Boucles</page>
+</link>
+<link>
+<page url=”index.php?site=conditions>Les conditions</page>
+</link>
+<link>
+<page url=”index.php?site=functions>Les Functions</page>
+</link>
+<link>
+<page url=”index.php?site=tableaux>Les Tableaux</page>
+</link>
+<link>
+<page url=”index.php?site=variables>Les Variables</page>
+</link>
+</pages>

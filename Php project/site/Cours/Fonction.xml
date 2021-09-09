@@ -1,0 +1,25 @@
+<chapitre>
+ <title>Les Fonctions</title>
+ <sujet>La vraie puissance de PHP vient de ses fonctions.&#13;
+&#13;
+PHP a plus de 1000 fonctions intégrées, et en plus vous pouvez créer vos propres fonctions personnalisées.&#13;
+&amp;#13;&#13;
+Fonctions PHP intégrées&amp;#13;&#13;
+PHP a plus de 1000 fonctions intégrées qui peuvent être appelées directement, à partir d'un script, pour effectuer une tâche spécifique.&#13;
+&#13;
+Veuillez consulter notre référence PHP pour un aperçu complet des fonctions intégrées de PHP .&#13;
+&#13;
+Fonctions définies par l'utilisateur PHP&#13;
+&#13;
+Outre les fonctions PHP intégrées, il est possible de créer vos propres fonctions.&#13;
+&#13;
+Une fonction est un bloc d'instructions qui peut être utilisé à plusieurs reprises dans un programme.&#13;
+&#13;
+Une fonction ne s'exécutera pas automatiquement lors du chargement d'une page.&#13;
+&#13;
+Une fonction sera exécutée par un appel à la fonction.&#13;
+&#13;
+Créer une fonction définie par l'utilisateur en PHP&#13;
+&#13;
+Une déclaration de fonction définie par l'utilisateur commence par le mot function</sujet>
+</chapitre>
